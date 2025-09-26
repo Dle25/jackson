@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initiall-scale="1.0">
+        <tittle>Jackson Electronics - Registration</tittle>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="page-center">
+            <div class="card">
+                <form id="noidungform" action="#" method="post" novalidate>
+                    <table class="form-table">
+
+                        <tr><!--logo tieu de-->
+                            <td colspan="6" class="header-cell">
+                                <div class="logo">
+                                    Jackson
+                                    <hr>
+                                    Electronics
+                                </div>
+                                <h2>Registration Form</h2>
+                                <p class="subtitle">Register your Jackson Electronics product here</p>
+                            
+                            </td>
+                        </tr>
+                        <tr><!--hang first name-->
+                            <td class="label"><label for ="firstName">First Name</label></td>
+                            <td><input type="text" id="firstName" name="firstName" placeholder="FirstName"></td>
+                            
+                            <td class="label"><label for ="lastName">Last Name</label></td>
+                            <td><input type="text" id="lastName" name="lastName" placeholder="LastName"></td>
+
+                        </tr>
+                        <tr><!--ad#1-->
+                            <td class="label"><label for="adrs1">Address #1:</label></td>
+                            <td colspan="3"><input type="text" id="adrs1" name="address1" placeholder="Address #1"></td>
+                        </tr>
+                        <tr><!--ad#2-->
+                            <td class="label"><laber for="adrs2">Address #2:</laber></td>
+                            <td colspan="3"><input type="text" id="adrs2" name="address2" placeholder="Address #2"></td>
+                        </tr>
+                        <tr><!--city-->
+                            <td class="label"><label for="city">City: </label></td>
+                            <td colspan="2"><input type="text" id="city" name="city" placeholder="City"></td>
+
+                            <td class="label"><label for="state">State: </label></td>
+                            <td><input type="text" id="state" name="state" placeholder="State"></td>
+
+                            <td class="label"><label for="zip">Zip: </label></td>
+                            <td><input type="text" id="zip" name="zip" placeholder="Zip"></td>
+                        </tr>
+                        <tr><!--country-->
+                            <td class="label"><label for="country">Country: </label></td>
+                            <td colspan="3">
+                                <select id="country" name="country">
+                                    <option value="">-- Select country --</option>
+                                    <option value="us">United States</option>
+                                    <option value="vn">Viet Nam</option>
+                                    <option value="ag">An Giang</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"></td>
+                        </tr> 
+                        
+                        <tr>
+                            <td class="label"><label for="product">Product: </label></td>
+                            <td><input type="text" id="product" name="product" placeholder="Product"></td>
+                        </tr>
+                        <tr>
+                            <td class="label"><label for="date">Date Purchased: </label></td>
+                            <td><input type="text" id="date" name="date" placeholder="Date"></td>
+                        </tr>
+                        <tr>
+                            <td class="label"><label for="serial">Senal #:</label></td>
+                            <td><input type="text" id="serial" name="serial" placeholder="Serial"></td>
+                        </tr>
+                        <!--used for-->
+                        <tr>
+                            <td class="label">Used for: </td>
+                            <td colspan="5">
+                                <label><input type="radio" name="usedFor" value="home">Home</label>
+                                <label><input type="radio" name="usedFor" value="business">Business</label>
+                                <label><input type="radio" name="usedFor" value="goverment">Goverment</label>
+                                <label><input type="radio" name="usedFor" value="edu">Educational Institution</label>
+                                <label><input type="radio" name="usedFor" value="other">Other</label>
+                            </td>
+                        </tr>
+                        <!--system-->
+                        <tr>
+                            <td class="label">System(check all that apply): </td>
+                            <td colspan="5">
+                                <label><input type="checkbox" name="system" value="win">Windows</label>
+                                <label><input type="checkbox" name="system" value="macintosh">Macintosh</label>
+                                <label><input type="checkbox" name="system" value="unix">UNIX</label>
+                                <label><input type="checkbox" name="system" value="other">Other</label>
+                            </td>
+                        </tr>
+                        <!--comment-->
+                        <tr>
+                            <td class="label"><label for="comments">Comments?: </label></td>
+                            <td colspan="5"><textarea id="comments" name="cmt" placeholder="Binh luan diii" rows="5"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" class="nut">
+                                <button type="submit">Click to Register</button>
+                                <button type="reset">Click to cancel</button>
+                            </td>
+                        </tr>
+
+                    </table>
+
+                </form>
+            </div>
+
+        </div>
+    </body>
+</html>
