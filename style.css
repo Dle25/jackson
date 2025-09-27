@@ -49,10 +49,11 @@ body {
 
 input[type="text"],
 input[type="date"],
-select {
+select, textarea {
   background-color: white;
   border: 1px solid #000000;
   padding: 3px;
+  width: 100%;
   box-sizing: border-box;
 }
 
@@ -117,4 +118,21 @@ td table {
 td table td {
   padding: 3px 15px 3px 0; 
 }
+@media (max-width: 600px) {
+  .form-table td {
+    display: block;    
+    width: 100%;         
+  }
+  .form-table tr {
+    display: block;     
+    margin-bottom: 10px;
+  }
+  .header-box {
+    max-width: 100%;    
+  }
+  .title {
+    font-size: 28px;     
+  }
+}
+
 
