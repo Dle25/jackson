@@ -19,45 +19,36 @@
         <table class="form-table">
           <caption>Register your Jackson Electronics product here</caption>
           <tr>
-            <td>First Name</td>
-            <td>
-              <input type="text" id="fname">
-              <label>Last Name: </label>
-              <input type="text" id="lname">
-            </td>
+            <td>First Name:</td>
+            <td><input type="text" name="firstname"></td>
+            <td>Last Name:</td>
+            <td><input type="text" name="lastname"></td>
           </tr>
           <tr>
-            <td>Address #1</td>
-            <td>
-              <input type="text" id="address1" class="wide-input">
-            </td>
+            <td>Address #1:</td>
+            <td colspan="3"><input type="text" name="address1" size="40"></td>
           </tr>
           <tr>
-            <td>Address #2</td>
-            <td>
-              <input type="text" id="address2" class="wide-input">
-            </td>
+            <td>Address #2:</td>
+            <td colspan="3"><input type="text" name="address2" size="40"></td>
           </tr>
           <tr>
-            <td>City</td>
-            <td>
-              <input type="text" class="city-input">
-              <label>State:</label>
-              <input type="text" id="state" class="state-input">
-              <label>Zip:</label>
-              <input type="text" id="zip" class="zip-input">
-            </td>
+            <td>City:</td>
+            <td><input type="text" name="city"></td>
+            <td>State:</td>
+            <td><input type="text" name="state" size="10"></td>
           </tr>
           <tr>
-            <td>Country</td>
-            <td>
-              <input type="text" id="country" value="United States">
-            </td>
+            <td>Zip:</td>
+            <td><input type="text" name="zip" size="10"></td>
+            <td>Country:</td>
+            <td><input type="text" name="country" value="United States"></td>
           </tr>
-          <tr><td colspan="2"><hr></td></tr>
+
+          <tr><td colspan="4"><hr></td></tr>
           <tr>
             <td>Product</td>
-            <td>
+            <td colspan="3">
               <select id="product" class="product-select">
                 <option value="ScanMaster">ScanMaster</option>
                 <option value="2">2</option>
@@ -68,61 +59,55 @@
           </tr>
           <tr>
             <td>Date Purchased</td>
-            <td>
-              <input type="date" id="date" class="date-input">
-            </td>
+            <td colspan="3"><input type="date" id="date" class="date-input"></td>
           </tr>
           <tr>
             <td>Serial #</td>
-            <td>
-              <input type="text" id="serial" class="serial-input">
-            </td>
+            <td colspan="3"><input type="text" id="serial" class="serial-input"></td>
           </tr>
           <tr>
             <td>Used for</td>
-            <td>
-              <input type="radio" id="home" name="used"><label>Home</label>
-              <input type="radio" id="educational_instituntion" name="used" class="ml-17"><label>Educational Institution</label>
+            <td colspan="3">
+              <table>
+                <tr>
+                  <td><label><input type="radio" name="used" value="Home"> Home</label></td>
+                  <td><label><input type="radio" name="used" value="Business"> Business</label></td>
+                </tr>
+                <tr>
+                  <td><label><input type="radio" name="used" value="Government"> Government</label></td>
+                  <td><label><input type="radio" name="used" value="Educational"> Educational Institution</label></td>
+                </tr>
+                <tr>
+                  <td><label><input type="radio" name="used" value="Other"> Other</label></td>
+                </tr>
+              </table>
             </td>
           </tr>
           <tr>
-            <td></td>
-            <td>
-              <input type="radio" id="business" name="used"><label>Business</label>
-              <input type="radio" id="other" name="used" class="ml-13"><label>Other</label>
+            <td>System (check all that apply):</td>
+            <td colspan="3">
+              <table>
+                <tr>
+                  <td><label><input type="checkbox" name="sys" value="Windows"> Windows</label></td>
+                  <td><label><input type="checkbox" name="sys" value="Macintosh"> Macintosh</label></td>
+                </tr>
+                <tr>
+                  <td><label><input type="checkbox" name="sys" value="UNIX"> UNIX</label></td>
+                  <td><label><input type="checkbox" name="sys" value="Other"> Other</label></td>
+                </tr>
+              </table>
             </td>
           </tr>
+
+          <tr><td colspan="4"><hr></td></tr>
           <tr>
-            <td></td>
-            <td>
-              <input type="radio" id="governmment" name="used"><label>Government</label>
-            </td>
+            <td>Comments?:</td>
+            <td colspan="3"><textarea id="comments"></textarea></td>
           </tr>
           <tr>
-            <td class="system-label">System (check all that apply):</td>
-            <td>
-              <input type="checkbox" id="windows"><label>Windows</label>
-              <input type="checkbox" id="unix" class="ml-12"><label>UNIX</label>
-            </td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>
-              <input type="checkbox" id="macintosh"><label>Macintosh</label>
-              <input type="checkbox" id="other" class="ml-10"><label>Other</label>
-            </td>
-          </tr>
-          <tr><td colspan="2"><hr></td></tr>
-          <tr>
-            <td><label>Comments?:</label></td>
-            <td>
-              <textarea id="comments"></textarea>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2">
+            <td colspan="4" style="text-align:center;">
               <input type="submit" value="Click to register" class="btn">
-              <input type="submit" value="Click to cancel" class="btn ml-1">
+              <input type="reset" value="Click to cancel" class="btn ml-1">
             </td>
           </tr>
         </table>

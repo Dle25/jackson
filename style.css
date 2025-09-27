@@ -4,18 +4,20 @@ body {
 }
 
 .container {
-  width: 55%;
+  width: 90%;
+  max-width: 800px;
   border: 2px solid black;
-  padding: 1px;
-  margin: 1px;
+  padding: 15px;
+  margin: 20px auto;
   background-color: #90beff;
-  margin-left: 22%;
+  box-sizing: border-box;
 }
 
 .header-box {
   background-color: cyan;
-  width: 35%;
-  margin-left: 33%;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 20px;
   border-radius: 10px;
   border: solid 2px black;
   box-shadow: 8px 8px 6px rgba(0,0,0,0.5);
@@ -29,9 +31,9 @@ body {
 
 .divider {
   background-color: black;
-  width: 99.1%;
+  width: 100%;
   height: 3px;
-  border: solid 3px black;
+  border: none;
 }
 
 .form-title {
@@ -40,20 +42,22 @@ body {
 
 .form-table {
   font-size: 18px;
-  width: 80%;
+  width: 100%;
   margin: auto;
+  border-collapse: collapse;
 }
 
 input[type="text"],
 input[type="date"],
 select {
   background-color: white;
-  border: 1px solid #ccc;
+  border: 1px solid #000000;
   padding: 3px;
+  box-sizing: border-box;
 }
 
 .wide-input {
-  width: 47%;
+  width: 50%;
 }
 
 .city-input {
@@ -61,28 +65,29 @@ select {
 }
 
 .state-input {
-  width: 10%;
-}
-
-.zip-input {
   width: 15%;
 }
 
+.zip-input {
+  width: 20%;
+}
+
 .product-select {
-  width: 25%;
+  width: 50%;
 }
 
 .date-input {
-  width: 28%;
+  width: 50%;
 }
 
 .serial-input {
-  width: 27.7%;
+  width: 50%;
 }
 
 textarea {
   width: 99%;
   height: 100px;
+  box-sizing: border-box;
 }
 
 .system-label {
@@ -90,12 +95,26 @@ textarea {
 }
 
 .btn {
-  margin-left: 33%;
-  padding: 5px 10px;
+  padding: 6px 15px;
+  font-size: 15px;
+  margin: 0 10px;  
+  cursor: pointer;
+}
+.form-buttons {
+  text-align: center;   
+  margin-top: 15px;
 }
 
-.ml-17 { margin-left: 17%; }
-.ml-13 { margin-left: 12.8%; }
-.ml-12 { margin-left: 12%; }
-.ml-10 { margin-left: 10.4%; }
-.ml-1  { margin-left: 1%; }
+td label {
+  display: inline-block;
+  min-width: 180px; 
+  margin-bottom: 5px;
+}
+td table {
+  border-collapse: collapse;
+}
+
+td table td {
+  padding: 3px 15px 3px 0; 
+}
+
